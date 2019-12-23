@@ -8,7 +8,7 @@
  */
 
 import produce from 'immer';
-import { LOAD_REPOS_SUCCESS, LOAD_REPOS, LOAD_REPOS_ERROR,FETCH_DATA } from './constants';
+import { LOAD_REPOS_SUCCESS, LOAD_REPOS, LOAD_REPOS_ERROR } from './constants';
 
 // The initial state of the App
 export const initialState = {
@@ -40,7 +40,6 @@ const appReducer = (state = initialState, action) =>
         draft.error = action.error;
         draft.loading = false;
         break;
-      
     }
   });
 
