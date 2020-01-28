@@ -10,7 +10,9 @@
 import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
+// eslint-disable-next-line import/no-unresolved
 import HomePage from 'containers/HomePage/Loadable';
+// eslint-disable-next-line import/no-unresolved
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 
 import GlobalStyle from '../../global-styles';
