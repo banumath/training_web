@@ -13,7 +13,6 @@ import { Switch, Route } from 'react-router-dom';
 
 import GlobalStyle from '../../global-styles';
 import { Diarycard } from '../Diarycard';
-import Diaryhome from '../Diaryhome';
 
 const AppWrapper = styled.div`
   max-width: calc(768px + 16px * 2);
@@ -34,8 +33,7 @@ export default function App() {
         <meta name="description" content="A React.js Boilerplate application" />
       </Helmet>
       <Switch>
-        <Route path="/diarycard" component={Diarycard} />
-        <Route path="/" component={Diaryhome} />
+        <Route path="/" component={Diarycard} />
       </Switch>
       <GlobalStyle />
     </AppWrapper>

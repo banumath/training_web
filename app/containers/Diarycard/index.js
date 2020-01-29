@@ -15,7 +15,8 @@ import PropTypes from 'prop-types';
 import makeSelectDiarycard from './selectors';
 import reducer from './reducer';
 import saga from './saga';
-import DiaryCard from '../../components/DiaryCard';
+// eslint-disable-next-line import/no-cycle
+import DiaryHome from '../../components/DiaryHome';
 
 export function Diarycard() {
   useInjectReducer({ key: 'diarycard', reducer });
@@ -23,13 +24,7 @@ export function Diarycard() {
 
   return (
     <div>
-      <DiaryCard
-        title="title"
-        subtitle="feaefwa"
-        description="i am good gcbsckdskjcnsjdkjckjcjdakjcbjkabjcka abcjabckacbicbkcb bbbckja ckjdncsjc dghsjaaaaaa
-        fghjkbbbbb"
-        backgroundColor="#f00"
-      />
+      <DiaryHome />
     </div>
   );
 }
